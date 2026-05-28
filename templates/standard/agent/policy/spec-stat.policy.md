@@ -5,6 +5,7 @@
 - toda `.spec` ativa deve ter `.stat`;
 - `agent/specs/` concentra os contratos normativos que orientam mudanças no projeto;
 - `docs/` pode referenciar specs, mas não substitui `agent/specs/` como fonte principal de contrato;
+- `.stat` não substitui Git, mas pode referenciar hash, mensagem e resumo do commit para rastreabilidade;
 - `.spec` não registra progresso;
 - `.stat` não redefine contrato;
 - specs precisam ter domínio claro;

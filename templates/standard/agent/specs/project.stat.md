@@ -21,6 +21,12 @@ Este é o estado inicial pareado com `project.spec.md`.
 - estrutura do workspace definida;
 - convenção de `.spec` e `.stat` estabelecida.
 
+## Commit relacionado
+
+- hash:
+- mensagem:
+- resumo:
+
 ## Próximo passo recomendado
 
 - substituir ou dividir esta spec fundacional quando os domínios do projeto estiverem claros.
