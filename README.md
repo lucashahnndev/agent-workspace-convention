@@ -2,11 +2,16 @@
 
 Uma convenção leve para organizar o trabalho de agentes em projetos.
 
-Este repositório é a fonte da convenção. O conteúdo em `templates/standard/` é o artefato copiável para projetos alvo. O repositório-fonte não precisa ter `agent-start-here.md` na raiz neste momento; esse arquivo entra no projeto alvo ao aplicar o template.
+Se você for um agente, comece por `AGENTS.md`.
+Se você for humano, copie o prompt abaixo e envie para o seu agente.
 
 ## Para humanos
 
-Este repositório reúne uma forma simples de organizar entrada, contrato, andamento e workspace de agentes.
+Este repositório é a fonte da convenção. Ele reúne uma forma simples de organizar entrada, contrato, andamento e workspace de agentes.
+
+O conteúdo em `templates/standard/` é o template copiável para projetos alvo. Ao aplicar esse template, o projeto destino recebe `agent-start-here.md`, `agent/specs/`, `agent/policy/` e o workspace operacional esperado.
+
+O repositório-fonte não é um projeto alvo por padrão e não precisa ser dogfoodado na raiz neste momento.
 
 Se você quer aplicar a convenção em um projeto, o caminho é:
 
@@ -14,17 +19,31 @@ Se você quer aplicar a convenção em um projeto, o caminho é:
 2. pedir ao agente para ler `agent-start-here.md`;
 3. deixar o agente seguir a convenção do projeto alvo.
 
-## Para começar com um agente
+## Prompt para o agente
 
 Use este prompt:
 
 ```text
-Leia o arquivo agent-start-here.md primeiro.
-Depois leia a .spec relevante e a .stat correspondente.
-.spec é contrato durável; .stat é estado vivo.
-Se o tema parecer merecer uma nova spec, verifique primeiro se já existe algo parecido.
-Não use documentação normativa como diário de progresso.
-Registre andamento na .stat e evidência no workspace apropriado.
+Leia a convenção em:
+
+https://github.com/lucashahnndev/agent-workspace-convention/blob/main/AGENTS.md
+
+Depois clone o repositório:
+
+git clone https://github.com/lucashahnndev/agent-workspace-convention.git
+
+Aplique o template `templates/standard/` no projeto atual.
+
+Preserve as regras centrais:
+- `.spec` é contrato durável;
+- `.stat` é estado vivo;
+- toda `.spec` ativa deve ter uma `.stat`;
+- documentação oficial deve continuar verdadeira;
+- `agent/` é workspace operacional, não documentação oficial;
+- não use checklist preenchível persistente como fonte de verdade;
+- registre progresso, pendências, validações e próximos passos na `.stat`.
+
+Não faça commit sem me mostrar antes os arquivos criados e o `git status`.
 ```
 
 ## Onde olhar
