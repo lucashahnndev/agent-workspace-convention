@@ -48,9 +48,9 @@ git clone https://github.com/lucashahnndev/agent-workspace-convention.git "$tmp_
 cp -R "$tmp_dir/agent-workspace-convention/templates/standard/." .
 ```
 
-## Pós-bootstrap: higiene inicial
+## Pós-bootstrap: adequação inicial
 
-Depois de aplicar `templates/standard/`, leia o `agent-start-here.md` criado e rode `git status --short`. Se houver arquivos modificados, untracked ou bagunça operacional, faça um diagnóstico e classifique cada item em manter, investigar, mover, renomear, apagar ou preservar. Não apague, mova, faça `reset`, `stash` ou commit sem aprovação. Registre o resultado de qualquer limpeza aprovada na `.stat`.
+Depois de aplicar `templates/standard/`, leia o `agent-start-here.md` criado e rode `git status --short`. Se houver arquivos modificados, untracked ou bagunça operacional, faça um diagnóstico e classifique cada item em manter, investigar, mover, renomear, apagar ou preservar. Não apague, mova, faça `reset`, `stash` ou commit sem aprovação. Registre o resultado de qualquer adequação aprovada na `.stat`.
 
 ## Política detalhada
 
