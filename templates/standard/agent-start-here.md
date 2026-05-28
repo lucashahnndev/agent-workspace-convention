@@ -1,15 +1,17 @@
 # Agent Start Here
 
+Este é o ponto de entrada do agente neste projeto.
+
 Leia este arquivo primeiro.
+Depois siga a ordem abaixo.
 
 ## Ordem de leitura
 
 1. `README.md` do projeto.
-2. `agent-start-here.md`.
-3. `.spec` relevante em `agent/specs/`, incluindo specs de sistema, arquitetura, contrato ou domínio que governem a mudança.
-4. `.stat` correspondente.
-5. documentação operacional e de arquitetura relevante.
-6. testes relacionados.
+2. `.spec` relevante em `agent/specs/`, incluindo specs de sistema, arquitetura, contrato ou domínio que governem a mudança.
+3. `.stat` correspondente.
+4. documentação humana, operacional ou de arquitetura relevante em `docs/`, quando existir.
+5. testes relacionados.
 
 ## Regra básica
 
