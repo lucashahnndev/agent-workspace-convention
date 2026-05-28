@@ -5,7 +5,7 @@ Uma convenção leve para organizar o trabalho de agentes em projetos.
 Se você for um agente, comece por `AGENTS.md`.
 Se você for humano, copie o prompt abaixo e envie para o seu agente.
 
-Versão da convenção: `v1`
+Os metadados da convenção vivem em `awc.meta.toon`.
 
 ## Para humanos
 
@@ -47,7 +47,7 @@ Leia primeiro:
 
 https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
 
-Atualize este projeto para a versão `v1` da convenção.
+Atualize este projeto para a versão registrada em `awc.meta.toon`.
 
 Sincronize apenas os arquivos da convenção com o template `templates/standard/`.
 
@@ -62,4 +62,5 @@ Antes de qualquer commit, me mostre:
 ## Onde olhar
 
 - `AGENTS.md`: instruções para agentes;
+- `awc.meta.toon`: metadados da convenção;
 - `templates/standard/`: template inicial para um projeto alvo.
