@@ -24,7 +24,7 @@ Se você quer aplicar a convenção em um projeto, o caminho é:
 Use este prompt:
 
 ```text
-Leia a convenção em:
+Leia primeiro:
 
 https://github.com/lucashahnndev/agent-workspace-convention/blob/main/AGENTS.md
 
@@ -33,24 +33,16 @@ Clone a convenção em uma pasta temporária fora do projeto alvo:
 tmp_dir="$(mktemp -d)"
 git clone https://github.com/lucashahnndev/agent-workspace-convention.git "$tmp_dir/agent-workspace-convention"
 
-Depois aplique apenas o conteúdo de `templates/standard/` no projeto atual:
+Aplique apenas o template `standard` no projeto atual:
 
 cp -R "$tmp_dir/agent-workspace-convention/templates/standard/." .
 
-Preserve as regras centrais:
-- `.spec` é contrato durável;
-- `.stat` é estado vivo;
-- toda `.spec` ativa deve ter uma `.stat`;
-- documentação oficial deve continuar verdadeira;
-- `agent/` é workspace operacional, não documentação oficial;
-- não use checklist preenchível persistente como fonte de verdade;
-- registre progresso, pendências, validações e próximos passos na `.stat`.
+Depois leia o `agent-start-here.md` criado no projeto alvo e siga a convenção.
 
-Não mantenha o clone da convenção dentro do projeto alvo.
-Não copie a pasta `.git` do repositório da convenção.
-Mostre `git status --short` antes de qualquer commit.
-
-Não faça commit sem me mostrar antes os arquivos criados e o `git status`.
+Antes de qualquer commit, me mostre:
+- arquivos criados;
+- `git status --short`;
+- dúvidas ou conflitos encontrados.
 ```
 
 ## Onde olhar
