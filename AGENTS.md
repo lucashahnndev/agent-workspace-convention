@@ -9,7 +9,7 @@ Você está no repositório-fonte da convenção, não em um projeto alvo. Não 
 Fornecer uma base simples e estável para que agentes:
 
 - encontrem o ponto de entrada;
-- separar contrato de andamento;
+- separem contrato de andamento;
 - mantenham a documentação verdadeira;
 - usem um workspace operacional sem poluir o repositório;
 - consigam continuar o trabalho entre sessões.
@@ -29,6 +29,24 @@ O template `standard` cria:
 - `agent/scripts/.gitkeep`
 - `agent/test/.gitkeep`
 - `agent/note/.gitkeep`
+
+## Bootstrap seguro
+
+Ao aplicar a convenção em um projeto alvo:
+
+1. clone este repositório em uma pasta temporária fora do projeto alvo;
+2. copie apenas o conteúdo de `templates/standard/`;
+3. não copie a pasta `.git` deste repositório;
+4. não mantenha o clone da convenção dentro do projeto alvo;
+5. depois leia o `agent-start-here.md` criado no projeto alvo.
+
+Exemplo:
+
+```bash
+tmp_dir="$(mktemp -d)"
+git clone https://github.com/lucashahnndev/agent-workspace-convention.git "$tmp_dir/agent-workspace-convention"
+cp -R "$tmp_dir/agent-workspace-convention/templates/standard/." .
+```
 
 ## Política detalhada
 

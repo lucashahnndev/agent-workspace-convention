@@ -34,9 +34,6 @@ Antes de qualquer commit, me mostre:
 - arquivos criados;
 - `git status --short`;
 - dúvidas ou conflitos encontrados.
-
-Motivo:
-o detalhe de clone, pasta temporária, cópia de template e aplicação segura deve ficar em AGENTS.md, não no README.
 ```
 
 ## Onde olhar
