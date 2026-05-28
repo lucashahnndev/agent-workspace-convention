@@ -26,7 +26,7 @@ Use este prompt:
 ```text
 Leia primeiro:
 
-https://github.com/lucashahnndev/agent-workspace-convention/blob/main/AGENTS.md
+https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
 
 Depois aplique a convenção `standard` neste projeto.
 
