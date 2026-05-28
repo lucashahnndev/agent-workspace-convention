@@ -28,21 +28,15 @@ Leia primeiro:
 
 https://github.com/lucashahnndev/agent-workspace-convention/blob/main/AGENTS.md
 
-Clone a convenção em uma pasta temporária fora do projeto alvo:
-
-tmp_dir="$(mktemp -d)"
-git clone https://github.com/lucashahnndev/agent-workspace-convention.git "$tmp_dir/agent-workspace-convention"
-
-Aplique apenas o template `standard` no projeto atual:
-
-cp -R "$tmp_dir/agent-workspace-convention/templates/standard/." .
-
-Depois leia o `agent-start-here.md` criado no projeto alvo e siga a convenção.
+Depois aplique a convenção `standard` neste projeto.
 
 Antes de qualquer commit, me mostre:
 - arquivos criados;
 - `git status --short`;
 - dúvidas ou conflitos encontrados.
+
+Motivo:
+o detalhe de clone, pasta temporária, cópia de template e aplicação segura deve ficar em AGENTS.md, não no README.
 ```
 
 ## Onde olhar
