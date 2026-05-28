@@ -31,5 +31,6 @@ Se fizer sentido formalizar, crie uma `.spec` com nome abstrato e estável.
 - mantenha mudanças pequenas e coerentes;
 - valide antes de avançar;
 - registre evidência no workspace apropriado;
+- não reorganize arquivos existentes sem aprovação;
 - atualize `.stat` quando houver progresso real;
 - atualize docs oficiais apenas quando contrato ou uso mudar.
