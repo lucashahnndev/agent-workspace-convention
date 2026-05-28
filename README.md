@@ -28,11 +28,14 @@ Leia a convenção em:
 
 https://github.com/lucashahnndev/agent-workspace-convention/blob/main/AGENTS.md
 
-Depois clone o repositório:
+Clone a convenção em uma pasta temporária fora do projeto alvo:
 
-git clone https://github.com/lucashahnndev/agent-workspace-convention.git
+tmp_dir="$(mktemp -d)"
+git clone https://github.com/lucashahnndev/agent-workspace-convention.git "$tmp_dir/agent-workspace-convention"
 
-Aplique o template `templates/standard/` no projeto atual.
+Depois aplique apenas o conteúdo de `templates/standard/` no projeto atual:
+
+cp -R "$tmp_dir/agent-workspace-convention/templates/standard/." .
 
 Preserve as regras centrais:
 - `.spec` é contrato durável;
@@ -42,6 +45,10 @@ Preserve as regras centrais:
 - `agent/` é workspace operacional, não documentação oficial;
 - não use checklist preenchível persistente como fonte de verdade;
 - registre progresso, pendências, validações e próximos passos na `.stat`.
+
+Não mantenha o clone da convenção dentro do projeto alvo.
+Não copie a pasta `.git` do repositório da convenção.
+Mostre `git status --short` antes de qualquer commit.
 
 Não faça commit sem me mostrar antes os arquivos criados e o `git status`.
 ```
