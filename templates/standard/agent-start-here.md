@@ -6,7 +6,7 @@ Leia este arquivo primeiro.
 
 1. `README.md` do projeto.
 2. `agent-start-here.md`.
-3. `.spec` relevante em `agent/specs/`.
+3. `.spec` relevante em `agent/specs/`, incluindo specs de sistema, arquitetura, contrato ou domínio que governem a mudança.
 4. `.stat` correspondente.
 5. documentação operacional e de arquitetura relevante.
 6. testes relacionados.

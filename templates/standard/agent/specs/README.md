@@ -1,6 +1,6 @@
 # Specs
 
-Este diretório guarda contratos do projeto alvo.
+Este diretório guarda os contratos normativos do projeto alvo que o agente deve ler e obedecer ao alterar o sistema.
 
 ## Regras
 
@@ -8,7 +8,9 @@ Este diretório guarda contratos do projeto alvo.
 - `.spec` define contrato durável;
 - `.stat` registra estado vivo;
 - não usar `.spec` como diário de progresso;
-- não usar `.stat` para redefinir contrato.
+- não usar `.stat` para redefinir contrato;
+- isso inclui sistema, arquitetura, comportamento de produto, contratos entre módulos, regras de domínio e políticas operacionais;
+- `docs/` é documentação oficial voltada a humanos e pode referenciar specs, mas não é o lugar principal do contrato normativo.
 
 ## Convenção
 
