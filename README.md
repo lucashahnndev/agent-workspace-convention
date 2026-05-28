@@ -5,6 +5,8 @@ Uma convenção leve para organizar o trabalho de agentes em projetos.
 Se você for um agente, comece por `AGENTS.md`.
 Se você for humano, copie o prompt abaixo e envie para o seu agente.
 
+Versão da convenção: `v1`
+
 ## Para humanos
 
 Este repositório é a fonte da convenção. Ele reúne uma forma simples de organizar entrada, contrato, andamento e workspace de agentes.
@@ -34,6 +36,27 @@ Antes de qualquer commit, me mostre:
 - arquivos criados;
 - `git status --short`;
 - dúvidas ou conflitos encontrados.
+```
+
+## Atualizar a convenção
+
+Use este prompt quando quiser atualizar um projeto já convencionado para a versão atual:
+
+```text
+Leia primeiro:
+
+https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
+
+Atualize este projeto para a versão `v1` da convenção.
+
+Sincronize apenas os arquivos da convenção com o template `templates/standard/`.
+
+Preserve alterações fora do escopo da convenção.
+
+Antes de qualquer commit, me mostre:
+- arquivos criados ou alterados;
+- `git status --short`;
+- conflitos ou dúvidas encontradas.
 ```
 
 ## Onde olhar
