@@ -1,6 +1,6 @@
 # Project Stat
 
-Data da última atualização: 2026-05-27
+Data da última atualização: preencher ao aplicar o template
 
 Este é o estado inicial pareado com `project.spec.md`.
 
@@ -34,4 +34,3 @@ Este é o estado inicial pareado com `project.spec.md`.
 
 - `.stat` registra estado, pendências, validações e próximos passos.
 - `.stat` não redefine contrato.
-

@@ -2,6 +2,8 @@
 
 Este arquivo é voltado para agentes que vão aplicar a convenção em outro projeto.
 
+Você está no repositório-fonte da convenção, não em um projeto alvo. Não confunda arquivos deste repositório com os arquivos que serão copiados para outro workspace. Ao aplicar a convenção, copie e adapte `templates/standard/` para o projeto destino. Não faça dogfood do repositório-fonte por conta própria sem pedido explícito.
+
 ## Objetivo
 
 Fornecer uma base simples e estável para que agentes:

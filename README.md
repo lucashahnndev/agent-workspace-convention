@@ -2,6 +2,8 @@
 
 Uma convenção leve para organizar o trabalho de agentes em projetos.
 
+Este repositório é a fonte da convenção. O conteúdo em `templates/standard/` é o artefato copiável para projetos alvo. O repositório-fonte não precisa ter `agent-start-here.md` na raiz neste momento; esse arquivo entra no projeto alvo ao aplicar o template.
+
 ## Para humanos
 
 Este repositório reúne uma forma simples de organizar entrada, contrato, andamento e workspace de agentes.
