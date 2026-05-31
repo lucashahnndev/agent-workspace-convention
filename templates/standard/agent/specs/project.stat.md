@@ -21,9 +21,11 @@ Este é o estado inicial pareado com `project.spec.md`.
 - estrutura do workspace definida;
 - convenção de `.spec` e `.stat` estabelecida.
 
-## Commit relacionado
+## Rastreamento de commit
 
-- hash:
+- trace_id: `awc-YYYYMMDD-HHMM-xxxx`
+- status do commit: pendente | feito | não realizado
+- hash (opcional, depois do commit):
 - mensagem:
 - resumo:
 
@@ -40,3 +42,7 @@ Este é o estado inicial pareado com `project.spec.md`.
 
 - `.stat` registra estado, pendências, validações e próximos passos.
 - `.stat` não redefine contrato.
+
+## Relacionados
+
+- `project.spec.md`

@@ -23,40 +23,24 @@ Se você quer aplicar a convenção em um projeto, o caminho é:
 
 ## Prompt para o agente
 
-Use este prompt:
+Use este prompt para aplicar a convenção:
 
 ```text
-Leia primeiro:
-
-https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
-
-Depois aplique a convenção `standard` neste projeto.
-
-Antes de qualquer commit, me mostre:
-- arquivos criados;
-- `git status --short`;
-- dúvidas ou conflitos encontrados.
+Leia primeiro `AGENTS.md` da convenção.
+Depois aplique `standard` neste projeto.
+Use `trace_id` antes do commit e me mostre `trace_id`, arquivos criados, arquivos alterados, `git status --short` e dúvidas.
 ```
 
 ## Atualizar a convenção
 
-Use este prompt quando quiser atualizar um projeto já convencionado para a versão atual:
+Use este prompt para atualizar um projeto já convencionado:
 
 ```text
-Leia primeiro:
-
-https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
-
+Leia primeiro `AGENTS.md` da convenção.
 Atualize este projeto para a versão registrada em `awc.meta.toon`.
-
-Sincronize apenas os arquivos da convenção com o template `templates/standard/`.
-
+Sincronize apenas os arquivos da convenção com `templates/standard/`.
 Preserve alterações fora do escopo da convenção.
-
-Antes de qualquer commit, me mostre:
-- arquivos criados ou alterados;
-- `git status --short`;
-- conflitos ou dúvidas encontradas.
+Use `trace_id` antes do commit e me mostre `trace_id`, arquivos criados ou alterados, `git status --short` e dúvidas.
 ```
 
 ## Onde olhar

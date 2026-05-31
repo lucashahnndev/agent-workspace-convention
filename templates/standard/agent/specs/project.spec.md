@@ -18,3 +18,6 @@ Quando o projeto amadurecer, esta spec deve ser substituída, dividida ou especi
 - manter uma referência mínima enquanto o domínio ainda está sendo separado;
 - evitar que o trabalho comece sem um contrato inicial.
 
+## Relacionados
+
+- `project.stat.md`

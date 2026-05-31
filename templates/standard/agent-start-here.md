@@ -31,6 +31,8 @@ Se fizer sentido formalizar, crie uma `.spec` com nome abstrato e estável.
 - mantenha mudanças pequenas e coerentes;
 - valide antes de avançar;
 - registre evidência no workspace apropriado;
+- ligue documentos relevantes quando isso ajudar a entender contrato, dependência ou continuidade;
 - não reorganize arquivos existentes sem aprovação;
 - atualize `.stat` quando houver progresso real;
 - atualize docs oficiais apenas quando contrato ou uso mudar.
+- para commits, siga `agent/policy/commit-safety.policy.md` e use `trace_id` quando houver mudança relevante.
