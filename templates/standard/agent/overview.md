@@ -5,6 +5,7 @@ This directory concentrates the agent's working material without polluting the r
 ## Useful entry points
 
 - [../project.overview.md](../project.overview.md)
+- [../project.update.md](../project.update.md)
 - [../agent-start-here.md](../agent-start-here.md)
 - [policy/overview.md](./policy/overview.md)
 - [specs/overview.md](./specs/overview.md)

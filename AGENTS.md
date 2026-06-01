@@ -25,6 +25,7 @@ Copy `templates/standard/` into the target project.
 The `standard` template creates:
 
 - `project.overview.md`
+- `project.update.md`
 - `agent-start-here.md`
 - `agent/overview.md`
 - `docs/overview.md`
@@ -50,6 +51,11 @@ When the destination is also used as an Obsidian vault, the template includes th
 
 `README.md` remains the human landing page in target projects. `project.overview.md`
 is the root overview for agent-oriented navigation.
+
+`project.update.md` is the update index for projects that already have the
+convention installed. It points the agent to the version metadata in
+`awc.meta.toon` and to the adequation route when the local installation must be
+reconciled with the convention.
 
 In the default AWC visual profile, `README.md` and `AGENTS.md` must be treated as privileged entry nodes. They should stand out in the graph to guide the initial reading, because they usually appear spread across multiple repositories and work as cognitive entry doors for the convention.
 
@@ -117,14 +123,15 @@ When the agent receives the short prompt from `README.md`, it should treat
    still needs `standard`;
 3. if this is a new installation, clone the convention outside the target
    project and copy `templates/standard/` into the destination;
-4. if it is an update, compare the local installation with `awc.meta.toon` and
-   reapply only the convention files that diverge;
-5. read the created or updated `agent-start-here.md` in the target project;
-6. follow the phased adequation protocol described in this file and in
+4. if it is an update, read `project.update.md`, compare the local installation
+   with `awc.meta.toon`, and reapply only the convention files that diverge;
+5. read the created or updated `project.overview.md` in the target project;
+6. read the created or updated `agent-start-here.md` in the target project;
+7. follow the phased adequation protocol described in this file and in
    `adequation.policy.md`;
-7. ask for approval before organizing, deleting, moving, or consolidating structural
+8. ask for approval before organizing, deleting, moving, or consolidating structural
    changes;
-8. record relevant progress in `trace_id` and the corresponding `.stat`.
+9. record relevant progress in `trace_id` and the corresponding `.stat`.
 
 ## Adequation protocol
 

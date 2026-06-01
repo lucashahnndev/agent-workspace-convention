@@ -25,7 +25,7 @@ After the bootstrap, the agent should end the first message in a short and
 predictable way. The recommended format is:
 
 ```text
-I installed the convention, aligned the graph and the .gitignore, and read the adequation roadmap.
+I installed the convention, aligned the graph and the .gitignore, and read the update index and adequation roadmap.
 Can I start phase 2: inventory of noise, artifacts, and loose files?
 ```
 
@@ -44,6 +44,7 @@ Before leaving each phase, the agent should repeat the same pattern:
 
 - confirm that `agent-start-here.md` was read;
 - confirm that `project.overview.md` was read;
+- confirm that `project.update.md` was read when the project already has the convention installed;
 - confirm that `README.md` and `agent/policy/overview.md` were read when they exist;
 - apply the recommended `graph.json` when the project uses Obsidian;
 - align the project `.gitignore` for known local noise;
@@ -101,6 +102,7 @@ Before moving between phases, show:
 
 - [README.md](../../README.md)
 - [../../project.overview.md](../../project.overview.md)
+- [../../project.update.md](../../project.update.md)
 - [overview.md](overview.md)
 - [../workspace.policy.md](workspace.policy.md)
 - [../specs/overview.md](../specs/overview.md)

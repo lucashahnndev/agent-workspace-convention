@@ -34,6 +34,7 @@ the adequation pass:
 
 ```text
 Read `AGENTS.md`.
+Then read `project.update.md`.
 Follow the adequation roadmap in `agent-start-here.md`.
 Then execute the adequation phases described in `AGENTS.md`.
 
@@ -53,6 +54,7 @@ the local installation diverges from the version registered in `awc.meta.toon`:
 ```text
 Read the convention source `AGENTS.md`:
 https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
+Then read `project.update.md`.
 
 If the local installation diverges from `awc.meta.toon`, reapply `standard`
 and align only the convention files. Then read
