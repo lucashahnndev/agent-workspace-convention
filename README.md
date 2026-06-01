@@ -46,14 +46,11 @@ Depois do bootstrap, use a mensagem padrao de handoff da adequacao e peça aprov
 
 ## Atualizar a convenção
 
-Use este prompt para atualizar um projeto já convencionado:
+Use este prompt para atualizar um projeto já convencionado, ou seja, quando a
+instalação local divergir da versão registrada em `awc.meta.toon`:
 
 ```text
-Leia primeiro [AGENTS.md](AGENTS.md) da convenção.
-Atualize este projeto para a versão registrada em `awc.meta.toon`.
-Sincronize apenas os arquivos da convenção com `templates/standard/`.
-Preserve alterações fora do escopo da convenção.
-Use `trace_id` antes do commit e me mostre `trace_id`, arquivos criados ou alterados, `git status --short` e dúvidas.
+Leia [AGENTS.md](AGENTS.md). Se a versão local divergir de `awc.meta.toon`, reaplique `standard` e alinhe só os arquivos da convenção. Depois leia `agent-start-here.md` e siga o roadmap de adequação. Antes do commit, me mostre `trace_id`, arquivos criados, arquivos alterados, `git status --short` e dúvidas.
 ```
 
 ## Onde olhar
