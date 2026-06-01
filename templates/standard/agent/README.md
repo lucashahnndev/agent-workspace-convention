@@ -4,6 +4,7 @@ This directory concentrates the agent's working material without polluting the r
 
 ## Useful entry points
 
+- [../project.overview.md](../project.overview.md)
 - [../agent-start-here.md](../agent-start-here.md)
 - [policy/README.md](./policy/README.md)
 - [specs/README.md](./specs/README.md)
@@ -11,7 +12,7 @@ This directory concentrates the agent's working material without polluting the r
 - [specs/project.spec.md](./specs/project.spec.md)
 - [specs/project.stat.md](./specs/project.stat.md)
 
-## Estrutura
+## Structure
 
 - `policy/`
   - durable rules for agent work;

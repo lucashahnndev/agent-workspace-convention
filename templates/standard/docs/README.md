@@ -33,6 +33,7 @@ evidence, planning, decisions, and legacy.
 
 ## Relation to the convention
 
+- [../project.overview.md](../project.overview.md) is the root overview for agent-oriented navigation;
 - [../agent-start-here.md](../agent-start-here.md) is the agent entry point;
 - [../agent/policy/README.md](../agent/policy/README.md) concentrates durable policies;
 - [../agent/specs/README.md](../agent/specs/README.md) concentrates normative contracts;

@@ -24,6 +24,7 @@ Copy `templates/standard/` into the target project.
 
 The `standard` template creates:
 
+- `project.overview.md`
 - `agent-start-here.md`
 - `agent/README.md`
 - `docs/README.md`
@@ -46,6 +47,9 @@ The `standard` template creates:
 - `agent/note/.gitkeep`
 
 When the destination is also used as an Obsidian vault, the template includes the recommended graph profile in `templates/standard/.obsidian/graph.json`. This file is part of the convention's visual deployment and can be copied together with the rest of the template when the vault accepts the default configuration.
+
+`README.md` remains the human landing page in target projects. `project.overview.md`
+is the root overview for agent-oriented navigation.
 
 In the default AWC visual profile, `README.md` and `AGENTS.md` must be treated as privileged entry nodes. They should stand out in the graph to guide the initial reading, because they usually appear spread across multiple repositories and work as cognitive entry doors for the convention.
 

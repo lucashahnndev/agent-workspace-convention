@@ -7,6 +7,9 @@ If you are human, copy the prompt below and send it to your agent.
 
 Convention metadata lives in `awc.meta.toon`.
 
+In target projects, `README.md` stays as the human landing page and
+`project.overview.md` becomes the root overview for agent-oriented navigation.
+
 ## Prompt for the agent
 
 Use this prompt to install the convention:

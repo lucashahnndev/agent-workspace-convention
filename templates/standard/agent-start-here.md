@@ -7,11 +7,12 @@ Then follow the order below.
 
 ## Reading order
 
-1. `README.md` of the project.
-2. relevant `.spec` in `agent/specs/`, including system, architecture, contract, or domain specs that govern the change.
-3. the corresponding `.stat`.
-4. relevant human, operational, or architecture documentation in `docs/`, when it exists.
-5. related tests.
+1. `project.overview.md` of the project.
+2. `README.md` of the project, when you need human-facing context.
+3. relevant `.spec` in `agent/specs/`, including system, architecture, contract, or domain specs that govern the change.
+4. the corresponding `.stat`.
+5. relevant human, operational, or architecture documentation in `docs/`, when it exists.
+6. related tests.
 
 ## Basic rule
 
@@ -57,5 +58,6 @@ If you are unsure about the next step, follow [agent/policy/adequation.policy.md
 
 ## Related
 
+- [project.overview.md](project.overview.md)
 - [agent/specs/README.md](agent/specs/README.md)
 - [agent/policy/README.md](agent/policy/README.md)

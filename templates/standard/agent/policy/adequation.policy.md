@@ -46,7 +46,7 @@ Before leaving each phase, the agent should repeat the same pattern:
 - confirm that `README.md` and `agent/policy/README.md` were read when they exist;
 - apply the recommended `graph.json` when the project uses Obsidian;
 - align the project `.gitignore` for known local noise;
-- create or align minimal documentation entry points when they are missing, if that is within scope.
+- create or align `project.overview.md` and other minimal documentation entry points when they are missing, if that is within scope.
 
 ## Phase 2: inventory
 
@@ -99,6 +99,7 @@ Before moving between phases, show:
 ## Related
 
 - [README.md](../../README.md)
+- [../../project.overview.md](../../project.overview.md)
 - [../README.md](README.md)
 - [../workspace.policy.md](workspace.policy.md)
 - [../specs/README.md](../specs/README.md)
