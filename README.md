@@ -31,7 +31,7 @@ instalação local divergir da versão registrada em `awc.meta.toon`:
 
 ```text
 [MODE] update
-[READ] [AGENTS.md](AGENTS.md)
+[READ] https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
 [COND] local-version != [awc.meta.toon](awc.meta.toon)
 [APPLY] [standard](templates/standard/)
 [READ] [agent-start-here.md](templates/standard/agent-start-here.md)
