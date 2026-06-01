@@ -56,6 +56,9 @@ Read the convention source `AGENTS.md`:
 https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
 Then read `project.update.md`.
 If the project needs multiple upgrade steps, also read `project.migrations.md`.
+If `project.update.md` or `project.migrations.md` are missing in the target,
+reapply `standard` first so the current update flow is available before you
+continue.
 
 If the local installation diverges from the SemVer version in `awc.meta.toon`,
 reapply `standard` and align only the convention files. Then read

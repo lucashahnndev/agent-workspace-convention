@@ -23,6 +23,7 @@ Legacy versions may appear in the `vN` format; the current SemVer baseline is
 | v7 | v8 | add `project.update.md` and version-aware update flow | `project.update.md`, `README.md`, `AGENTS.md`, `agent-start-here.md` | create the update index, compare against `awc.meta.toon`, and route updates through the new flow | update path becomes explicit and reusable |
 | v8 | v9 | add `project.migrations.md` and version-by-version update flow | `project.update.md`, `project.migrations.md`, `README.md`, `AGENTS.md` | create the migration ledger, compare the installed version with `awc.meta.toon`, and replay one migration row at a time | updates can now step through multiple versions |
 | v9 | 0.0.1 | migrate the convention metadata to SemVer | `awc.meta.toon`, `README.md`, `AGENTS.md`, `project.update.md`, `project.migrations.md` | change the version field to semantic versioning and keep the legacy `vN` rows as historical context | `0.0.1` is the first SemVer baseline |
+| 0.0.1 | 0.0.2 | clarify the update bootstrap when update files are missing | `README.md`, `AGENTS.md`, `project.update.md`, `project.migrations.md`, `agent-start-here.md` | explicitly tell the agent to reapply `standard` when the target project still lacks the update index or migration ledger | update flow becomes self-contained for old installations |
 
 ## Update pattern
 

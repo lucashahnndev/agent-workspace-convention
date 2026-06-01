@@ -14,6 +14,8 @@ This is the update index for a project that already has AWC installed.
 
 Use this file when the local installation may diverge from the SemVer version
 recorded in `awc.meta.toon`.
+If this file or `project.migrations.md` are missing in the target project,
+reapply `standard` first so the current update flow becomes available.
 
 ## Update flow
 

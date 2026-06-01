@@ -7,7 +7,6 @@ You are in the convention source repository, not a target project. Do not confus
 The short alias for the convention is `awc`, short for `agent-workspace-convention`.
 
 The version and control metadata live in `awc.meta.toon` at the repository root.
-The current convention version uses SemVer starting at `0.0.1`.
 
 ## Goal
 
@@ -51,21 +50,11 @@ The `standard` template creates:
 
 When the destination is also used as an Obsidian vault, the template includes the recommended graph profile in `templates/standard/.obsidian/graph.json`. This file is part of the convention's visual deployment and can be copied together with the rest of the template when the vault accepts the default configuration.
 
-`README.md` remains the human landing page in target projects. `project.overview.md`
-is the root overview for agent-oriented navigation.
+`README.md` remains the human landing page in target projects. `project.overview.md` is the root overview for agent-oriented navigation.
 
-`project.update.md` is the update index for projects that already have the
-convention installed. It points the agent to the version metadata in
-`awc.meta.toon` and to the adequation route when the local installation must be
-reconciled with the convention.
+`project.update.md` is the update index for projects that already have the convention installed. It points the agent to the version metadata in `awc.meta.toon` and to the adequation route when the local installation must be reconciled with the convention.
 
-`project.migrations.md` is the version-to-version migration ledger. It preserves
-legacy `vN` rows for older installations and switches to SemVer for current and
-future releases.
-
-`project.migrations.md` is the version-to-version migration ledger. Use it when a
-target project must step through multiple convention versions before it reaches
-the current one.
+`project.migrations.md` is the version-to-version migration ledger. It preserves legacy `vN` rows for older installations and switches to SemVer for current and future releases.
 
 In the default AWC visual profile, `README.md` and `AGENTS.md` must be treated as privileged entry nodes. They should stand out in the graph to guide the initial reading, because they usually appear spread across multiple repositories and work as cognitive entry doors for the convention.
 
@@ -93,8 +82,7 @@ cp -R "$tmp_dir/agent-workspace-convention/templates/standard/." .
 
 ## Recommended Obsidian graph
 
-When the target project uses Obsidian as a vault, apply the default profile in
-`templates/standard/.obsidian/graph.json` and keep the following excluded as noise:
+When the target project uses Obsidian as a vault, apply the default profile in `templates/standard/.obsidian/graph.json` and keep the following excluded as noise:
 
 - `changelog` and `CHANGELOG`
 - dependencies and build artifacts such as `node_modules`, `vendor`, `dist`, and `build`
@@ -125,24 +113,18 @@ This bootstrap only defines the map and the expected use.
 
 ## Expected flow when receiving the short prompt
 
-When the agent receives the short prompt from `README.md`, it should treat
-`AGENTS.md` as the source of detailed instructions and follow this route:
+When the agent receives the short prompt from `README.md`, it should treat `AGENTS.md` as the source of detailed instructions and follow this route:
 
 1. open the convention `AGENTS.md`;
-2. identify whether the target project already has the convention installed or
-   still needs `standard`;
-3. if this is a new installation, clone the convention outside the target
-   project and copy `templates/standard/` into the destination;
-4. if it is an update, read `project.update.md`, then `project.migrations.md`,
-   compare the local installation with `awc.meta.toon`, and reapply only the
-   convention files that diverge for the next unapplied migration row;
-5. read the created or updated `project.overview.md` in the target project;
-6. read the created or updated `agent-start-here.md` in the target project;
-7. follow the phased adequation protocol described in this file and in
-   `adequation.policy.md`;
-8. ask for approval before organizing, deleting, moving, or consolidating structural
-   changes;
-9. record relevant progress in `trace_id` and the corresponding `.stat`.
+2. identify whether the target project already has the convention installed or still needs `standard`;
+3. if this is a new installation, clone the convention outside the target project and copy `templates/standard/` into the destination;
+4. if it is an update, read `project.update.md`, then `project.migrations.md`, compare the local installation with `awc.meta.toon`, and reapply only the convention files that diverge for the next unapplied migration row;
+5. if `project.update.md` or `project.migrations.md` do not exist yet in the target project, first reapply `standard` so the current update flow is available;
+6. read the created or updated `project.overview.md` in the target project;
+7. read the created or updated `agent-start-here.md` in the target project;
+8. follow the phased adequation protocol described in this file and in `adequation.policy.md`;
+9. ask for approval before organizing, deleting, moving, or consolidating structural changes;
+10. record relevant progress in `trace_id` and the corresponding `.stat`.
 
 ## Adequation protocol
 
