@@ -7,7 +7,7 @@ You are in the convention source repository, not a target project. Do not confus
 The short alias for the convention is `awc`, short for `agent-workspace-convention`.
 
 The version and control metadata live in `awc.meta.toon` at the repository root.
-From `9.0.0` onward, the convention version follows SemVer.
+The current convention version uses SemVer starting at `0.0.1`.
 
 ## Goal
 
