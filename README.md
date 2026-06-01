@@ -55,6 +55,7 @@ the local installation diverges from the version registered in `awc.meta.toon`:
 Read the convention source `AGENTS.md`:
 https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
 Then read `project.update.md`.
+If the project needs multiple upgrade steps, also read `project.migrations.md`.
 
 If the local installation diverges from `awc.meta.toon`, reapply `standard`
 and align only the convention files. Then read

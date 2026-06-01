@@ -9,11 +9,12 @@ Then follow the order below.
 
 1. `project.overview.md` of the project.
 2. `project.update.md` when the project already has the convention installed and you need the update path.
-3. `README.md` of the project, when you need human-facing context.
-4. relevant `.spec` in `agent/specs/`, including system, architecture, contract, or domain specs that govern the change.
-5. the corresponding `.stat`.
-6. relevant human, operational, or architecture documentation in `docs/`, when it exists.
-7. related tests.
+3. `project.migrations.md` when you need the version-by-version migration plan.
+4. `README.md` of the project, when you need human-facing context.
+5. relevant `.spec` in `agent/specs/`, including system, architecture, contract, or domain specs that govern the change.
+6. the corresponding `.stat`.
+7. relevant human, operational, or architecture documentation in `docs/`, when it exists.
+8. related tests.
 
 ## Basic rule
 
@@ -52,7 +53,8 @@ When this repository has already received the convention and needs to be aligned
 6. map documentation that needs to become contract, state, or official docs;
 7. propose and, after approval, create or adjust `.spec`, `.stat`, and links;
 8. consolidate with `trace_id` and keep `.stat` traceable;
-9. use `project.update.md` as the update index when the local installation must be compared against `awc.meta.toon`.
+9. use `project.update.md` as the update index when the local installation must be compared against `awc.meta.toon`;
+10. use `project.migrations.md` to move version by version when the local installation needs multiple upgrade steps.
 
 After the bootstrap, use the standard adequation handoff message from the adequation policy and ask for approval to start the next phase.
 

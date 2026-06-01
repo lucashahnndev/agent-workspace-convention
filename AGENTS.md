@@ -26,6 +26,7 @@ The `standard` template creates:
 
 - `project.overview.md`
 - `project.update.md`
+- `project.migrations.md`
 - `agent-start-here.md`
 - `agent/overview.md`
 - `docs/overview.md`
@@ -56,6 +57,10 @@ is the root overview for agent-oriented navigation.
 convention installed. It points the agent to the version metadata in
 `awc.meta.toon` and to the adequation route when the local installation must be
 reconciled with the convention.
+
+`project.migrations.md` is the version-to-version migration ledger. Use it when a
+target project must step through multiple convention versions before it reaches
+the current one.
 
 In the default AWC visual profile, `README.md` and `AGENTS.md` must be treated as privileged entry nodes. They should stand out in the graph to guide the initial reading, because they usually appear spread across multiple repositories and work as cognitive entry doors for the convention.
 
@@ -123,8 +128,9 @@ When the agent receives the short prompt from `README.md`, it should treat
    still needs `standard`;
 3. if this is a new installation, clone the convention outside the target
    project and copy `templates/standard/` into the destination;
-4. if it is an update, read `project.update.md`, compare the local installation
-   with `awc.meta.toon`, and reapply only the convention files that diverge;
+4. if it is an update, read `project.update.md`, then `project.migrations.md`,
+   compare the local installation with `awc.meta.toon`, and reapply only the
+   convention files that diverge for the next unapplied migration row;
 5. read the created or updated `project.overview.md` in the target project;
 6. read the created or updated `agent-start-here.md` in the target project;
 7. follow the phased adequation protocol described in this file and in
