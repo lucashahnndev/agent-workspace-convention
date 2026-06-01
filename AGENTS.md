@@ -7,6 +7,7 @@ You are in the convention source repository, not a target project. Do not confus
 The short alias for the convention is `awc`, short for `agent-workspace-convention`.
 
 The version and control metadata live in `awc.meta.toon` at the repository root.
+From `9.0.0` onward, the convention version follows SemVer.
 
 ## Goal
 
@@ -57,6 +58,10 @@ is the root overview for agent-oriented navigation.
 convention installed. It points the agent to the version metadata in
 `awc.meta.toon` and to the adequation route when the local installation must be
 reconciled with the convention.
+
+`project.migrations.md` is the version-to-version migration ledger. It preserves
+legacy `vN` rows for older installations and switches to SemVer for current and
+future releases.
 
 `project.migrations.md` is the version-to-version migration ledger. Use it when a
 target project must step through multiple convention versions before it reaches

@@ -1,2 +1,3 @@
-convention.version: v9
+convention.version: 9.0.0
+convention.version_scheme: semver
 convention.source_language: en

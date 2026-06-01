@@ -12,13 +12,13 @@ This is the update index for a project that already has AWC installed.
 
 ## When to use
 
-Use this file when the local installation may diverge from the convention version
+Use this file when the local installation may diverge from the SemVer version
 recorded in `awc.meta.toon`.
 
 ## Update flow
 
 1. Read `AGENTS.md`.
-2. Compare the installed convention with `awc.meta.toon`.
+2. Compare the installed convention with `awc.meta.toon` using SemVer ordering.
 3. Read `project.migrations.md`.
 4. Find the next unapplied migration row.
 5. Reapply `standard` only where the convention diverges for that row.

@@ -1,6 +1,7 @@
 # Project Migrations
 
 This ledger records version-to-version changes for AWC installations.
+Legacy versions may appear in the `vN` format; the current scheme uses SemVer.
 
 ## How to use
 
@@ -9,6 +10,7 @@ This ledger records version-to-version changes for AWC installations.
 3. Apply the listed change set.
 4. Re-read `awc.meta.toon` and continue until the installed version matches the
    convention version.
+5. Use SemVer ordering for rows at and after `9.0.0`.
 
 ## Migration ledger
 
@@ -19,6 +21,7 @@ This ledger records version-to-version changes for AWC installations.
 | v6 | v7 | replace internal `README.md` indexes with `overview.md` | `agent/`, `docs/`, `agent/policy/`, `agent/specs/`, `docs/*` | rename internal folder indexes to `overview.md` and keep the root landing page human | reduces `README` collisions in the graph |
 | v7 | v8 | add `project.update.md` and version-aware update flow | `project.update.md`, `README.md`, `AGENTS.md`, `agent-start-here.md` | create the update index, compare against `awc.meta.toon`, and route updates through the new flow | update path becomes explicit and reusable |
 | v8 | v9 | add `project.migrations.md` and version-by-version update flow | `project.update.md`, `project.migrations.md`, `README.md`, `AGENTS.md` | create the migration ledger, compare the installed version with `awc.meta.toon`, and replay one migration row at a time | updates can now step through multiple versions |
+| v9 | 9.0.0 | migrate the convention metadata to SemVer | `awc.meta.toon`, `README.md`, `AGENTS.md`, `project.update.md`, `project.migrations.md` | change the version field to semantic versioning and keep the legacy `vN` rows as historical context | future releases use `MAJOR.MINOR.PATCH` |
 
 ## Update pattern
 

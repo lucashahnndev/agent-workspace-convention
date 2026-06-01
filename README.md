@@ -57,8 +57,8 @@ https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/
 Then read `project.update.md`.
 If the project needs multiple upgrade steps, also read `project.migrations.md`.
 
-If the local installation diverges from `awc.meta.toon`, reapply `standard`
-and align only the convention files. Then read
+If the local installation diverges from the SemVer version in `awc.meta.toon`,
+reapply `standard` and align only the convention files. Then read
 `agent-start-here.md` and follow the adequation roadmap.
 
 Before any commit, show me:
