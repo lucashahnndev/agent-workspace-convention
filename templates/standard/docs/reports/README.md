@@ -1,13 +1,13 @@
 # Reports
 
-Relatorios, auditorias e evidencias que sustentam decisoes e ajustes.
+Reports, audits, and evidence that support decisions and adjustments.
 
-## Uso
+## Use
 
-- use para registrar validacao, mediacoes, diagnosticos e analises;
-- quando o conteudo virar norma, migre para `agent/specs/` ou `agent/policy/`.
+- use to record validation, mediation, diagnostics, and analysis;
+- when the content becomes a rule, migrate it to `agent/specs/` or `agent/policy/`.
 
-## Relacionados
+## Related
 
 - [../README.md](../README.md)
 - [../../agent/specs/README.md](../../agent/specs/README.md)

@@ -1,20 +1,20 @@
 # Commit Safety Policy
 
-- rode `git status --short` antes de propor ou fazer commit;
-- revise o diff;
-- se o projeto usa Git, mudanças relevantes devem terminar com `.stat` atualizada; quando aprovado, devem terminar também com commit limpo e coerente;
-- use um `trace_id` curto e estável para amarrar a mudança antes do commit;
-- formato recomendado do `trace_id`: `awc-YYYYMMDD-HHMM-xxxx`, em UTC, com `xxxx` alfanumérico curto;
-- registre o `trace_id` na `.stat` e também no commit message ou no corpo do commit;
-- a `.stat` pode registrar o hash depois do commit, mas não depende dele para existir;
-- se o commit não for feito, a `.stat` deve registrar o motivo e o estado de rastreio;
-- não misture no commit arquivos fora do escopo da etapa;
-- não commite segredos, `.env`, dumps, snapshots ou logs sensíveis;
-- não commite temporários por acidente;
-- prefira commits pequenos por etapa;
-- se necessário, separe mudança de contrato, implementação e limpeza.
+- run `git status --short` before proposing or making a commit;
+- review the diff;
+- if the project uses Git, relevant changes should end with `.stat` updated; when approved, they should also end with a clean and coherent commit;
+- use a short and stable `trace_id` to tie the change before the commit;
+- recommended `trace_id` format: `awc-YYYYMMDD-HHMM-xxxx`, in UTC, with short alphanumeric `xxxx`;
+- record the `trace_id` in `.stat` and also in the commit message or commit body;
+- `.stat` may record the hash after the commit, but it does not depend on it to exist;
+- if the commit is not made, `.stat` should record the reason and the trace state;
+- do not mix files outside the stage scope into the commit;
+- do not commit secrets, `.env`, dumps, snapshots, or sensitive logs;
+- do not commit temporary files by accident;
+- prefer small commits per stage;
+- if needed, separate contract change, implementation, and cleanup.
 
-## Relacionados
+## Related
 
 - [../specs/project.stat.md](../specs/project.stat.md)
 - [spec-stat.policy.md](spec-stat.policy.md)

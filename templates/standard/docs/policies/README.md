@@ -1,14 +1,13 @@
 # Policies
 
-Regras humanas de uso e governanca que complementam as policies duraveis do
-agente.
+Human usage and governance rules that complement the agent's durable policies.
 
-## Uso
+## Use
 
-- use para orientacoes operacionais e criterios de leitura;
-- quando a regra precisar ser executada sempre, migre para `agent/policy/`.
+- use for operational guidance and reading criteria;
+- when the rule needs to run every time, migrate it to `agent/policy/`.
 
-## Relacionados
+## Related
 
 - [../README.md](../README.md)
 - [../../agent/policy/README.md](../../agent/policy/README.md)

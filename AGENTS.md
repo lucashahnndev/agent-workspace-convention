@@ -1,28 +1,28 @@
 # AGENTS.md
 
-Este arquivo é voltado para agentes que vão aplicar a convenção em outro projeto.
+This file is for agents that will apply the convention in another project.
 
-Você está no repositório-fonte da convenção, não em um projeto alvo. Não confunda arquivos deste repositório com os arquivos que serão copiados para outro workspace. Ao aplicar a convenção, copie e adapte `templates/standard/` para o projeto destino. Não faça dogfood do repositório-fonte por conta própria sem pedido explícito.
+You are in the convention source repository, not a target project. Do not confuse the files in this repository with the files that will be copied into another workspace. When applying the convention, copy and adapt `templates/standard/` into the destination project. Do not dogfood the source repository on your own without explicit request.
 
-O alias curto da convenção é `awc`, abreviação de `agent-workspace-convention`.
+The short alias for the convention is `awc`, short for `agent-workspace-convention`.
 
-A versão e os metadados de controle da convenção vivem em `awc.meta.toon` na raiz do repositório.
+The version and control metadata live in `awc.meta.toon` at the repository root.
 
-## Objetivo
+## Goal
 
-Fornecer uma base simples e estável para que agentes:
+Provide a simple and stable base so agents can:
 
-- encontrem o ponto de entrada;
-- separem contrato de andamento;
-- mantenham a documentação verdadeira;
-- usem um workspace operacional sem poluir o repositório;
-- consigam continuar o trabalho entre sessões.
+- find the entry point;
+- separate contract from progress;
+- keep documentation truthful;
+- use an operational workspace without polluting the repository;
+- continue work across sessions.
 
-## Estrutura recomendada
+## Recommended structure
 
-Copie `templates/standard/` para o projeto alvo.
+Copy `templates/standard/` into the target project.
 
-O template `standard` cria:
+The `standard` template creates:
 
 - `agent-start-here.md`
 - `agent/README.md`
@@ -45,25 +45,25 @@ O template `standard` cria:
 - `agent/test/.gitkeep`
 - `agent/note/.gitkeep`
 
-Quando o destino também for usado como vault do Obsidian, o template inclui o perfil recomendado de grafo em `templates/standard/.obsidian/graph.json`. Esse arquivo faz parte da implantação visual da convenção e pode ser copiado junto com o resto do template quando o vault aceitar a configuração padrão.
+When the destination is also used as an Obsidian vault, the template includes the recommended graph profile in `templates/standard/.obsidian/graph.json`. This file is part of the convention's visual deployment and can be copied together with the rest of the template when the vault accepts the default configuration.
 
-No perfil visual padrão da AWC, `README.md` e `AGENTS.md` devem ser tratados como nós de entrada privilegiados. Eles devem ficar em destaque no grafo para orientar a leitura inicial, porque normalmente aparecem espalhados por vários repositórios e funcionam como portas de entrada cognitivas da convenção.
+In the default AWC visual profile, `README.md` and `AGENTS.md` must be treated as privileged entry nodes. They should stand out in the graph to guide the initial reading, because they usually appear spread across multiple repositories and work as cognitive entry doors for the convention.
 
-Quando o vault for usado para inspeção técnica de implementação, pode ser útil copiar o perfil alternativo em `templates/standard/.obsidian/graph-tech.json`. Esse perfil é mais discreto e separa arquivos de código, configuração, testes e documentação sem substituir o perfil principal da convenção.
+When the vault is used for technical implementation inspection, it can be useful to copy the alternative profile in `templates/standard/.obsidian/graph-tech.json`. That profile is more discreet and separates code, configuration, tests, and documentation files without replacing the convention's main profile.
 
-## Bootstrap seguro
+## Safe bootstrap
 
-Ao aplicar a convenção em um projeto alvo:
+When applying the convention to a target project:
 
-1. clone este repositório em uma pasta temporária fora do projeto alvo;
-2. copie apenas o conteúdo de `templates/standard/`;
-3. não copie a pasta `.git` deste repositório;
-4. não mantenha o clone da convenção dentro do projeto alvo;
-5. depois leia o `agent-start-here.md` criado no projeto alvo.
+1. clone this repository into a temporary folder outside the target project;
+2. copy only the contents of `templates/standard/`;
+3. do not copy this repository's `.git` folder;
+4. do not keep the convention clone inside the target project;
+5. then read the `agent-start-here.md` created in the target project.
 
-Se o projeto alvo já tiver `.gitignore`, mescle os padrões da convenção com os padrões existentes do projeto em vez de apagar regras úteis do repositório destino.
+If the target project already has a `.gitignore`, merge the convention patterns with the project's existing patterns instead of deleting useful rules from the destination repository.
 
-Exemplo:
+Example:
 
 ```bash
 tmp_dir="$(mktemp -d)"
@@ -71,73 +71,71 @@ git clone https://github.com/lucashahnndev/agent-workspace-convention.git "$tmp_
 cp -R "$tmp_dir/agent-workspace-convention/templates/standard/." .
 ```
 
-## Grafo Obsidian recomendado
+## Recommended Obsidian graph
 
-Quando o projeto alvo usar Obsidian como vault, aplique o perfil padrão em
-`templates/standard/.obsidian/graph.json` e mantenha como ruído excluído:
+When the target project uses Obsidian as a vault, apply the default profile in
+`templates/standard/.obsidian/graph.json` and keep the following excluded as noise:
 
-- `changelog` e `CHANGELOG`
-- dependências e artefatos de build como `node_modules`, `vendor`, `dist` e `build`
-- ambientes locais como `.venv`, `venv` e `site-packages`
-- arquivos e pastas de configuração do próprio vault como `.git` e `.obsidian`
+- `changelog` and `CHANGELOG`
+- dependencies and build artifacts such as `node_modules`, `vendor`, `dist`, and `build`
+- local environments such as `.venv`, `venv`, and `site-packages`
+- vault configuration files and folders such as `.git` and `.obsidian`
 
-Se a localização dessas pastas variar, configure também **Excluded files** no
-Obsidian, porque essa opção oculta os arquivos na Search, Graph View e backlinks
-de forma global no vault.
+If the location of these folders varies, configure **Excluded files** in Obsidian too, because that option hides files globally in Search, Graph View, and backlinks.
 
-## Pós-bootstrap: adequação inicial
+## Post-bootstrap: initial adequation
 
-Depois de aplicar `templates/standard/`, leia o `agent-start-here.md` criado e rode `git status --short`. Se houver arquivos modificados, untracked ou bagunça operacional, faça um diagnóstico e classifique cada item em manter, investigar, mover, renomear, apagar ou preservar. Não apague, mova, faça `reset`, `stash` ou commit sem aprovação. Registre o resultado de qualquer adequação aprovada na `.stat`.
+After applying `templates/standard/`, read the created `agent-start-here.md` and run `git status --short`. If there are modified files, untracked files, or operational noise, diagnose and classify each item as keep, investigate, move, rename, delete, or preserve. Do not delete, move, `reset`, `stash`, or commit without approval. Record the result of any approved adequation in the `.stat`.
 
-## Política detalhada
+## Detailed policy
 
-As regras completas ficam em `agent/policy/` no projeto alvo.
+The full rules live in `agent/policy/` in the target project.
 
-O bootstrap aqui só define o mapa e o uso esperado.
+This bootstrap only defines the map and the expected use.
 
-## Forma de trabalhar
+## Working pattern
 
-1. ler `agent-start-here.md`;
-2. ler a `.spec` relevante;
-3. ler a `.stat` correspondente;
-4. validar o impacto;
-5. atualizar andamento;
-6. atualizar documentação oficial apenas se o comportamento ou contrato mudar;
-7. deixar o workspace limpo.
+1. read `agent-start-here.md`;
+2. read the relevant `.spec`;
+3. read the corresponding `.stat`;
+4. validate the impact;
+5. update progress;
+6. update official documentation only if behavior or contract changes;
+7. leave the workspace clean.
 
-## Fluxo esperado ao receber o prompt curto
+## Expected flow when receiving the short prompt
 
-Quando o agente receber o prompt curto do `README.md`, ele deve tratar
-`AGENTS.md` como a fonte de instruções detalhadas e seguir este roteiro:
+When the agent receives the short prompt from `README.md`, it should treat
+`AGENTS.md` as the source of detailed instructions and follow this route:
 
-1. abrir o `AGENTS.md` da convenção;
-2. identificar se o projeto alvo já tem convenção instalada ou se ainda vai
-   receber `standard`;
-3. se for instalação nova, clonar a convenção de fora do projeto alvo e copiar
-   `templates/standard/` para o destino;
-4. se for atualização, comparar a instalação local com `awc.meta.toon` e
-   reaplicar apenas os arquivos da convenção que divergirem;
-5. ler o `agent-start-here.md` criado ou atualizado no projeto alvo;
-6. seguir o protocolo de adequação em fases descrito neste arquivo e na
+1. open the convention `AGENTS.md`;
+2. identify whether the target project already has the convention installed or
+   still needs `standard`;
+3. if this is a new installation, clone the convention outside the target
+   project and copy `templates/standard/` into the destination;
+4. if it is an update, compare the local installation with `awc.meta.toon` and
+   reapply only the convention files that diverge;
+5. read the created or updated `agent-start-here.md` in the target project;
+6. follow the phased adequation protocol described in this file and in
    `adequation.policy.md`;
-7. pedir aprovação antes de organizar, apagar, mover ou consolidar mudanças
-   estruturais;
-8. registrar progresso relevante em `trace_id` e na `.stat` correspondente.
+7. ask for approval before organizing, deleting, moving, or consolidating structural
+   changes;
+8. record relevant progress in `trace_id` and the corresponding `.stat`.
 
-## Protocolo de adequação
+## Adequation protocol
 
-Quando a convenção for aplicada em um projeto alvo, o fluxo recomendado é:
+When the convention is applied to a target project, the recommended flow is:
 
-1. bootstrap da convenção;
-2. ajustar `graph.json` e `.gitignore` para ruído local conhecido;
-3. inventariar artefatos, arquivos soltos e temporários;
-4. pedir aprovação antes de organizar ou apagar;
-5. organizar o repositório;
-6. mapear documentação que precisa virar contexto, `.spec` ou `.stat`;
-7. pedir aprovação antes de criar ou mover contratos;
-8. fazer a linkagem e a consolidação;
-9. atualizar `.stat` com o progresso real;
-10. usar `trace_id` para registrar a mudança relevante.
+1. bootstrap the convention;
+2. adjust `graph.json` and `.gitignore` for known local noise;
+3. inventory artifacts, loose files, and temporary files;
+4. ask for approval before organizing or deleting;
+5. organize the repository;
+6. map documentation that needs to become context, `.spec`, or `.stat`;
+7. ask for approval before creating or moving contracts;
+8. perform linking and consolidation;
+9. update `.stat` with the real progress;
+10. use `trace_id` to record the relevant change.
 
-Se faltar contexto para a próxima ação, siga [templates/standard/agent/policy/adequation.policy.md](templates/standard/agent/policy/adequation.policy.md).
-Depois do bootstrap, use a mensagem padrao de handoff da adequacao e peça aprovacao antes de entrar na fase seguinte.
+If context is missing for the next action, follow [templates/standard/agent/policy/adequation.policy.md](templates/standard/agent/policy/adequation.policy.md).
+After the bootstrap, use the standard adequation handoff message and ask for approval before entering the next phase.

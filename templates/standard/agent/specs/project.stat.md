@@ -1,48 +1,48 @@
 # Project Stat
 
-Data da última atualização: preencher ao aplicar o template
+Last update date: fill in when applying the template
 
-Este é o estado inicial pareado com `project.spec.md`.
+This is the initial state paired with `project.spec.md`.
 
-## Estado atual
+## Current state
 
-- convenção inicial criada;
-- estrutura base disponível;
-- domínios reais ainda podem ser separados em specs próprias.
+- initial convention created;
+- base structure available;
+- real domains can still be separated into their own specs.
 
-## Pendências
+## Pending items
 
-- definir specs de domínio reais quando o projeto alvo amadurecer;
-- ajustar documentação operacional conforme o uso concreto aparecer.
+- define real domain specs when the target project matures;
+- adjust operational documentation as concrete usage appears.
 
-## Evidências / validações
+## Evidence / validation
 
-- template inicial criado;
-- estrutura do workspace definida;
-- convenção de `.spec` e `.stat` estabelecida.
+- initial template created;
+- workspace structure defined;
+- `.spec` and `.stat` convention established.
 
-## Rastreamento de commit
+## Commit tracking
 
 - trace_id: `awc-YYYYMMDD-HHMM-xxxx`
-- status do commit: pendente | feito | não realizado
-- hash (opcional, depois do commit):
-- mensagem:
-- resumo:
+- commit status: pending | done | not done
+- hash (optional, after the commit):
+- message:
+- summary:
 
-## Próximo passo recomendado
+## Recommended next step
 
-- substituir ou dividir esta spec fundacional quando os domínios do projeto estiverem claros.
+- replace or split this foundational spec when the project's domains are clear.
 
-## Riscos ou dúvidas abertas
+## Open risks or doubts
 
-- esta spec é apenas um ponto de partida;
-- não deve absorver domínios independentes por conveniência.
+- this spec is only a starting point;
+- it should not absorb independent domains for convenience.
 
-## Regra central
+## Core rule
 
-- `.stat` registra estado, pendências, validações e próximos passos.
-- `.stat` não redefine contrato.
+- `.stat` records state, pending items, validation, and next steps.
+- `.stat` does not redefine contract.
 
-## Relacionados
+## Related
 
 - [project.spec](project.spec.md)

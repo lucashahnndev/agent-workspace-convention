@@ -1,62 +1,61 @@
 # Agent Start Here
 
-Este é o ponto de entrada do agente neste projeto.
+This is the agent entry point for this project.
 
-Leia este arquivo primeiro.
-Depois siga a ordem abaixo.
+Read this file first.
+Then follow the order below.
 
-## Ordem de leitura
+## Reading order
 
-1. `README.md` do projeto.
-2. `.spec` relevante em `agent/specs/`, incluindo specs de sistema, arquitetura, contrato ou domínio que governem a mudança.
-3. `.stat` correspondente.
-4. documentação humana, operacional ou de arquitetura relevante em `docs/`, quando existir.
-5. testes relacionados.
+1. `README.md` of the project.
+2. relevant `.spec` in `agent/specs/`, including system, architecture, contract, or domain specs that govern the change.
+3. the corresponding `.stat`.
+4. relevant human, operational, or architecture documentation in `docs/`, when it exists.
+5. related tests.
 
-## Regra básica
+## Basic rule
 
-- `.spec` é contrato durável.
-- `.stat` é estado vivo.
-- `agent/` é workspace operacional.
-- as regras detalhadas ficam em [agent/policy/README.md](agent/policy/README.md).
+- `.spec` is durable contract.
+- `.stat` is live state.
+- `agent/` is operational workspace.
+- detailed rules live in [agent/policy/README.md](agent/policy/README.md).
 
-## Regra de abstração
+## Abstraction rule
 
-Se o tema parecer amplo o suficiente para virar contrato, verifique primeiro se já existe uma `.spec` parecida.
-Se houver conflito, ajuste a proposta antes de criar nova documentação.
-Se fizer sentido formalizar, crie uma `.spec` com nome abstrato e estável.
+If the topic seems broad enough to become a contract, first check whether there is already a similar `.spec`.
+If there is a conflict, adjust the proposal before creating new documentation.
+If it makes sense to formalize it, create a `.spec` with an abstract and stable name.
 
-## Regra de trabalho
+## Working rule
 
-- mantenha mudanças pequenas e coerentes;
-- valide antes de avançar;
-- registre evidência no workspace apropriado;
-- ligue documentos relevantes quando isso ajudar a entender contrato, dependência ou continuidade;
-- quando o alvo for um arquivo que não é `.md`, use referência explícita ao arquivo ou caminho exato; não crie nota nova para representá-lo;
-- não reorganize arquivos existentes sem aprovação;
-- atualize `.stat` quando houver progresso real;
-- atualize docs oficiais apenas quando contrato ou uso mudar.
-- para commits, siga [agent/policy/commit-safety.policy](agent/policy/commit-safety.policy.md) e use `trace_id` quando houver mudança relevante.
+- keep changes small and coherent;
+- validate before advancing;
+- record evidence in the appropriate workspace;
+- link relevant documents when that helps understand contract, dependency, or continuity;
+- when the target is a file that is not `.md`, use an explicit reference to the file or exact path; do not create a new note to represent it;
+- do not reorganize existing files without approval;
+- update `.stat` when there is real progress;
+- update official docs only when contract or usage changes.
+- for commits, follow [agent/policy/commit-safety.policy](agent/policy/commit-safety.policy.md) and use `trace_id` when there is a relevant change.
 
-## Protocolo de adequação
+## Adequation protocol
 
-Quando este repositório já recebeu a convenção e precisa ser alinhado ao padrão:
+When this repository has already received the convention and needs to be aligned with the standard:
 
-1. aplique o bootstrap da convenção;
-2. ajuste `graph.json` e as exclusões do vault;
-3. faça inventário de artefatos, arquivos soltos e ruído operacional;
-4. peça aprovação antes de organizar, mover ou apagar;
-5. organize o repositório;
-6. mapeie documentação que precisa virar contrato, estado ou doc oficial;
-7. proponha e, depois de aprovado, crie ou ajuste `.spec`, `.stat` e links;
-8. consolide com `trace_id` e deixe a `.stat` rastreável.
+1. apply the convention bootstrap;
+2. adjust `graph.json` and the vault exclusions;
+3. inventory artifacts, loose files, and operational noise;
+4. ask for approval before organizing, moving, or deleting;
+5. organize the repository;
+6. map documentation that needs to become contract, state, or official docs;
+7. propose and, after approval, create or adjust `.spec`, `.stat`, and links;
+8. consolidate with `trace_id` and keep `.stat` traceable.
 
-Depois do bootstrap, use a mensagem padrao de handoff da policy de adequacao
-e peça aprovacao para iniciar a fase seguinte.
+After the bootstrap, use the standard adequation handoff message from the adequation policy and ask for approval to start the next phase.
 
-Se houver dúvida sobre a próxima etapa, siga [agent/policy/adequation.policy.md](agent/policy/adequation.policy.md).
+If you are unsure about the next step, follow [agent/policy/adequation.policy.md](agent/policy/adequation.policy.md).
 
-## Relacionados
+## Related
 
 - [agent/specs/README.md](agent/specs/README.md)
 - [agent/policy/README.md](agent/policy/README.md)

@@ -1,13 +1,13 @@
 # Decisions
 
-Decisoes aprovadas e fechadas.
+Approved and closed decisions.
 
-## Uso
+## Use
 
-- use para registrar escolhas ja consolidadas;
-- quando a decisao alterar o contrato, atualize `agent/specs/` e `agent/stat`.
+- use to record already consolidated choices;
+- when the decision changes the contract, update `agent/specs/` and `agent/stat`.
 
-## Relacionados
+## Related
 
 - [../README.md](../README.md)
 - [../../agent/specs/README.md](../../agent/specs/README.md)

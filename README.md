@@ -1,40 +1,64 @@
 # agent-workspace-convention
 
-Uma convenção leve para organizar o trabalho de agentes em projetos.
+A lightweight convention for organizing agent work in projects.
 
-Se você for um agente, comece por `AGENTS.md`.
-Se você for humano, copie o prompt abaixo e envie para o seu agente.
+If you are an agent, start with `AGENTS.md`.
+If you are human, copy the prompt below and send it to your agent.
 
-Os metadados da convenção vivem em `awc.meta.toon`.
+Convention metadata lives in `awc.meta.toon`.
 
-## Prompt para o agente
+## Prompt for the agent
 
-Use este prompt para aplicar a convenção:
+Use this prompt to install the convention:
 
 ```text
-Leia primeiro:
+Read first:
 
 https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
 
-Depois aplique a convenção `standard` neste projeto.
+Then apply the `standard` convention to this project.
 
-Antes de qualquer commit, me mostre:
-- arquivos criados;
+Before any commit, show me:
+- created files;
 - `git status --short`;
-- dúvidas ou conflitos encontrados.
+- any doubts or conflicts found.
 ```
 
-## Atualizar a convenção
+## Adequation
 
-Use este prompt para atualizar um projeto já convencionado, ou seja, quando a
-instalação local divergir da versão registrada em `awc.meta.toon`:
+Use this prompt when the convention is already installed and you want to start
+the adequation pass:
 
 ```text
-[MODE] update
-[READ] https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
-[COND] local-version != [awc.meta.toon](awc.meta.toon)
-[APPLY] [standard](templates/standard/)
-[READ] [agent-start-here.md](templates/standard/agent-start-here.md)
-[FLOW] adequation-roadmap
-[REPORT] trace_id | created-files | changed-files | git-status-short | doubts
+Read `AGENTS.md`.
+Follow the adequation roadmap in `agent-start-here.md`.
+Then execute the adequation phases described in `AGENTS.md`.
+
+Before any commit, show me:
+- inventory;
+- created files;
+- changed files;
+- `git status --short`;
+- any doubts or conflicts found.
+```
+
+## Update the convention
+
+Use this prompt to update a project that is already using the convention, that is, when
+the local installation diverges from the version registered in `awc.meta.toon`:
+
+```text
+Read the convention source `AGENTS.md`:
+https://raw.githubusercontent.com/lucashahnndev/agent-workspace-convention/main/AGENTS.md
+
+If the local installation diverges from `awc.meta.toon`, reapply `standard`
+and align only the convention files. Then read
+`agent-start-here.md` and follow the adequation roadmap.
+
+Before any commit, show me:
+- trace_id;
+- created files;
+- changed files;
+- `git status --short`;
+- doubts.
 ```

@@ -1,8 +1,8 @@
 # Agent Workspace
 
-Este diretório concentra o material de trabalho do agente sem poluir a raiz do repositório.
+This directory concentrates the agent's working material without polluting the repository root.
 
-## Entradas úteis
+## Useful entry points
 
 - [../agent-start-here.md](../agent-start-here.md)
 - [policy/README.md](./policy/README.md)
@@ -14,43 +14,43 @@ Este diretório concentra o material de trabalho do agente sem poluir a raiz do 
 ## Estrutura
 
 - `policy/`
-  - regras duráveis para trabalho do agente;
-  - convenções de fluxo, contrato, documentação e segurança.
+  - durable rules for agent work;
+  - workflow, contract, documentation, and safety conventions.
 - `specs/`
-  - especificações normativas;
-  - status de andamento;
-  - pares `.spec` / `.stat`.
+  - normative specifications;
+  - progress status;
+  - `.spec` / `.stat` pairs.
 - `prints/`
-  - capturas de tela;
-  - imagens temporárias de apoio;
-  - comparações visuais.
+  - screenshots;
+  - temporary support images;
+  - visual comparisons.
 - `tmp/`
-  - prints de teste;
-  - capturas temporárias;
-  - artefatos descartáveis.
+  - test prints;
+  - temporary captures;
+  - disposable artifacts.
 - `reports/`
-  - relatórios curtos de validação;
-  - sumários de auditoria;
-  - saídas que merecem ficar organizadas.
+  - short validation reports;
+  - audit summaries;
+  - outputs worth keeping organized.
 - `scripts/`
-  - scripts auxiliares e automações curtas;
-  - utilitários de teste.
+  - helper scripts and small automations;
+  - test utilities.
 - `test/`
-  - testes pontuais e verificações de apoio;
-  - rascunhos de validação.
+  - small tests and support checks;
+  - validation drafts.
 - `note/`
-  - anotações mais íntimas do agente;
-  - rascunhos de raciocínio;
-  - observações de contexto.
+  - more private agent notes;
+  - reasoning drafts;
+  - context observations.
 
-## Regras
+## Rules
 
-- mantenha o resto do repositório limpo;
-- não use a raiz para prints e rascunhos;
-- promova para documentação oficial apenas o que estiver estável;
-- não guardar segredos, tokens, dumps ou dados sensíveis sem motivo explícito.
+- keep the rest of the repository clean;
+- do not use the root for prints and drafts;
+- promote to official documentation only what is stable;
+- do not store secrets, tokens, dumps, or sensitive data without an explicit reason.
 
-## Relacionados
+## Related
 
 - [../agent-start-here.md](../agent-start-here.md)
 - [../docs/README.md](../docs/README.md)

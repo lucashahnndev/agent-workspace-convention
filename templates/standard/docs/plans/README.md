@@ -1,13 +1,13 @@
 # Plans
 
-Planos de migracao, fases de trabalho e listas de execucao.
+Migration plans, work phases, and execution checklists.
 
-## Uso
+## Use
 
-- use para roadmaps, fases e preparacao de mudanca;
-- quando a fase virar contrato duravel, migre para `agent/specs/`.
+- use for roadmaps, phases, and change preparation;
+- when the phase becomes a durable contract, migrate it to `agent/specs/`.
 
-## Relacionados
+## Related
 
 - [../README.md](../README.md)
 - [../../agent/specs/README.md](../../agent/specs/README.md)

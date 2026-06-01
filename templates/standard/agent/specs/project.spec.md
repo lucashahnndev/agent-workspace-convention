@@ -1,23 +1,23 @@
 # Project Spec
 
-Esta é uma spec fundacional inicial.
+This is an initial foundational spec.
 
-Ela existe para servir de ponto de partida até que os domínios reais do projeto fiquem claros.
+It exists to serve as a starting point until the project's real domains become clear.
 
-Quando o projeto amadurecer, esta spec deve ser substituída, dividida ou especializada conforme os domínios reais surgirem.
+When the project matures, this spec should be replaced, split, or specialized as the real domains emerge.
 
-## Regra central
+## Core rule
 
-- `.spec` é contrato.
-- `.spec` não é andamento.
-- `.spec` não deve virar diário de progresso.
+- `.spec` is contract.
+- `.spec` is not progress.
+- `.spec` must not become a progress log.
 
-## Papel desta spec
+## Role of this spec
 
-- estabelecer a base inicial de organização;
-- manter uma referência mínima enquanto o domínio ainda está sendo separado;
-- evitar que o trabalho comece sem um contrato inicial.
+- establish the initial organization base;
+- keep a minimal reference while the domain is still being separated;
+- prevent work from starting without an initial contract.
 
-## Relacionados
+## Related
 
 - [project.stat](project.stat.md)

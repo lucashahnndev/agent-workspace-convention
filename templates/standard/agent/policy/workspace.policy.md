@@ -1,20 +1,20 @@
 # Workspace Policy
 
-- `agent/` é workspace operacional;
-- `tmp` guarda temporários;
-- `prints` guarda capturas e imagens de teste;
-- `reports` guarda relatórios e evidências textuais;
-- `scripts` guarda scripts auxiliares;
-- `test` guarda testes pontuais;
-- `note` guarda anotações internas;
-- `agent/.gitignore` ignora conteúdo operacional temporário por padrão; `agent/specs/`, `agent/policy/`, `agent/scripts/` e `agent/test/` continuam versionáveis; se algo em `tmp`, `prints`, `reports` ou `note` virar evidência durável, promova para o local correto antes de versionar.
-- `agent/prints/` guarda screenshots, imagens de teste, evidências visuais e validações temporárias do agente; `docs/` guarda documentação humana/oficial; `docs/screenshots/` só deve existir se as imagens forem parte de documentação humana real.
-- workspace não é documentação oficial;
-- nada ali vira contrato por acidente;
-- temporários devem ser limpos ou promovidos;
-- não espalhe arquivos fora do workspace.
+- `agent/` is operational workspace;
+- `tmp` stores temporary files;
+- `prints` stores screenshots and test images;
+- `reports` stores reports and textual evidence;
+- `scripts` stores helper scripts;
+- `test` stores small tests;
+- `note` stores internal notes;
+- `agent/.gitignore` ignores temporary operational content by default; `agent/specs/`, `agent/policy/`, `agent/scripts/`, and `agent/test/` remain versioned; if something in `tmp`, `prints`, `reports`, or `note` becomes durable evidence, promote it to the correct location before versioning.
+- `agent/prints/` stores screenshots, test images, visual evidence, and temporary agent validations; `docs/` stores human/official documentation; `docs/screenshots/` should exist only if the images are part of real human documentation.
+- the workspace is not official documentation;
+- nothing there becomes contract by accident;
+- temporary files should be cleaned up or promoted;
+- do not spread files outside the workspace.
 
-## Relacionados
+## Related
 
 - [../specs/README.md](../specs/README.md)
 - [../specs/project.stat.md](../specs/project.stat.md)

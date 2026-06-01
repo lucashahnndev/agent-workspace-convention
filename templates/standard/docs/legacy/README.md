@@ -1,13 +1,13 @@
 # Legacy
 
-Historico substituido, trilhas antigas e materiais fora da base ativa.
+Replaced history, old tracks, and material outside the active base.
 
-## Uso
+## Use
 
-- use para documentos que nao sao mais a referencia principal;
-- mantenha links para a alternativa ativa quando existir.
+- use for documents that are no longer the main reference;
+- keep links to the active alternative when one exists.
 
-## Relacionados
+## Related
 
 - [../README.md](../README.md)
 - [../../agent/specs/README.md](../../agent/specs/README.md)

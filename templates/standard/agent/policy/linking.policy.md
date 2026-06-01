@@ -1,14 +1,14 @@
 # Linking Policy
 
-- ligue documentos quando a relação ajudar a entender contrato, dependência, correlação ou continuidade;
-- toda `.spec` deve apontar para sua `.stat` correspondente, e toda `.stat` deve apontar para sua `.spec` correspondente;
-- quando houver um documento pai, um substituto ou uma referência relevante, linke também;
-- use wikilinks ou links Markdown internos para notas `.md`;
-- para arquivos que não são `.md` (`.json`, `.jsx`, `.py`, `.ts`, assets e similares), use referência explícita ao arquivo com o caminho exato ou texto literal; não use wikilink para criar nota nova a partir deles;
-- não force links sem valor nem imponha limite numérico para correlações úteis;
-- mantenha os links simples, estáveis e fáceis de seguir.
+- link documents when the relation helps understand contract, dependency, correlation, or continuity;
+- every `.spec` must point to its corresponding `.stat`, and every `.stat` must point to its corresponding `.spec`;
+- when there is a parent document, a replacement, or a relevant reference, link that too;
+- use wikilinks or internal Markdown links for `.md` notes;
+- for files that are not `.md` (`.json`, `.jsx`, `.py`, `.ts`, assets, and similar), use an explicit reference to the file with the exact path or literal text; do not use wikilinks to create a new note from them;
+- do not force valueless links or impose a numeric limit on useful correlations;
+- keep links simple, stable, and easy to follow.
 
-## Relacionados
+## Related
 
 - [../specs/README.md](../specs/README.md)
 - [../specs/project.spec.md](../specs/project.spec.md)

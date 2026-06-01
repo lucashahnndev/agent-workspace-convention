@@ -1,27 +1,27 @@
 # Specs
 
-Este diretório guarda os contratos normativos do projeto alvo que o agente deve ler e obedecer ao alterar o sistema.
+This directory stores the target project's normative contracts that the agent must read and obey when changing the system.
 
-## Regras
+## Rules
 
-- cada `.spec` ativa deve ter uma `.stat`;
-- `.spec` define contrato durável;
-- `.stat` registra estado vivo;
-- não usar `.spec` como diário de progresso;
-- não usar `.stat` para redefinir contrato;
-- isso inclui sistema, arquitetura, comportamento de produto, contratos entre módulos, regras de domínio e políticas operacionais;
-- `docs/` é documentação oficial voltada a humanos e pode referenciar specs, mas não é o lugar principal do contrato normativo.
+- every active `.spec` must have a `.stat`;
+- `.spec` defines durable contract;
+- `.stat` records live state;
+- do not use `.spec` as a progress log;
+- do not use `.stat` to redefine contract;
+- this includes system, architecture, product behavior, module contracts, domain rules, and operational policies;
+- `docs/` is official human-facing documentation and may reference specs, but it is not the main place for normative contract.
 
-## Convenção
+## Convention
 
 - `nome-do-dominio.spec.md`
 - `nome-do-dominio.stat.md`
 
-## Base inicial
+## Initial base
 
 - `project.spec.md`
 - `project.stat.md`
 
-## Relacionados
+## Related
 
 - [../policy/README.md](../policy/README.md)
