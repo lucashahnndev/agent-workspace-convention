@@ -105,6 +105,25 @@ O bootstrap aqui só define o mapa e o uso esperado.
 6. atualizar documentação oficial apenas se o comportamento ou contrato mudar;
 7. deixar o workspace limpo.
 
+## Fluxo esperado ao receber o prompt curto
+
+Quando o agente receber o prompt curto do `README.md`, ele deve tratar
+`AGENTS.md` como a fonte de instruções detalhadas e seguir este roteiro:
+
+1. abrir o `AGENTS.md` da convenção;
+2. identificar se o projeto alvo já tem convenção instalada ou se ainda vai
+   receber `standard`;
+3. se for instalação nova, clonar a convenção de fora do projeto alvo e copiar
+   `templates/standard/` para o destino;
+4. se for atualização, comparar a instalação local com `awc.meta.toon` e
+   reaplicar apenas os arquivos da convenção que divergirem;
+5. ler o `agent-start-here.md` criado ou atualizado no projeto alvo;
+6. seguir o protocolo de adequação em fases descrito neste arquivo e na
+   `adequation.policy.md`;
+7. pedir aprovação antes de organizar, apagar, mover ou consolidar mudanças
+   estruturais;
+8. registrar progresso relevante em `trace_id` e na `.stat` correspondente.
+
 ## Protocolo de adequação
 
 Quando a convenção for aplicada em um projeto alvo, o fluxo recomendado é:
