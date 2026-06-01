@@ -13,3 +13,8 @@
 - nada ali vira contrato por acidente;
 - temporários devem ser limpos ou promovidos;
 - não espalhe arquivos fora do workspace.
+
+## Relacionados
+
+- [../specs/README.md](../specs/README.md)
+- [../specs/project.stat.md](../specs/project.stat.md)

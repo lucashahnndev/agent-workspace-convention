@@ -20,4 +20,4 @@ Quando o projeto amadurecer, esta spec deve ser substituída, dividida ou especi
 
 ## Relacionados
 
-- `project.stat.md`
+- [project.stat](project.stat.md)

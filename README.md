@@ -11,7 +11,7 @@ Os metadados da convenção vivem em `awc.meta.toon`.
 
 Este repositório é a fonte da convenção. Ele reúne uma forma simples de organizar entrada, contrato, andamento e workspace de agentes.
 
-O conteúdo em `templates/standard/` é o template copiável para projetos alvo. Ao aplicar esse template, o projeto destino recebe `agent-start-here.md`, `agent/specs/`, `agent/policy/` e o workspace operacional esperado.
+O conteúdo em `templates/standard/` é o template copiável para projetos alvo. Ao aplicar esse template, o projeto destino recebe `agent-start-here.md`, `agent/README.md`, `docs/README.md`, a taxonomia de `docs/` (`concepts`, `contracts`, `policies`, `reports`, `plans`, `guides`, `decisions`, `legacy`), `agent/specs/`, `agent/policy/` e o workspace operacional esperado.
 
 O repositório-fonte não é um projeto alvo por padrão e não precisa ser dogfoodado na raiz neste momento.
 
@@ -26,9 +26,22 @@ Se você quer aplicar a convenção em um projeto, o caminho é:
 Use este prompt para aplicar a convenção:
 
 ```text
-Leia primeiro `AGENTS.md` da convenção.
+Leia primeiro [AGENTS.md](AGENTS.md) da convenção.
 Depois aplique `standard` neste projeto.
 Use `trace_id` antes do commit e me mostre `trace_id`, arquivos criados, arquivos alterados, `git status --short` e dúvidas.
+```
+
+## Protocolo de adequação
+
+Use este prompt quando o repositório já tem a convenção e você quer iniciar
+a primeira rodada de adequação pós-instalação:
+
+```text
+Leia primeiro [AGENTS.md](AGENTS.md) da convenção.
+Depois siga o protocolo de adequação em fases: bootstrap, ajustes de grafo e ignore, inventário, aprovação para organizar, organização, mapeamento de docs para .spec/.stat, aprovação para contexto e contratos, linkagem e consolidação.
+Antes de mudar qualquer estrutura, mostre o inventário, os arquivos criados ou alterados, o `git status --short` e as dúvidas.
+Use `trace_id` quando houver mudança relevante.
+Depois do bootstrap, use a mensagem padrao de handoff da adequacao e peça aprovacao para iniciar a fase seguinte.
 ```
 
 ## Atualizar a convenção
@@ -36,7 +49,7 @@ Use `trace_id` antes do commit e me mostre `trace_id`, arquivos criados, arquivo
 Use este prompt para atualizar um projeto já convencionado:
 
 ```text
-Leia primeiro `AGENTS.md` da convenção.
+Leia primeiro [AGENTS.md](AGENTS.md) da convenção.
 Atualize este projeto para a versão registrada em `awc.meta.toon`.
 Sincronize apenas os arquivos da convenção com `templates/standard/`.
 Preserve alterações fora do escopo da convenção.

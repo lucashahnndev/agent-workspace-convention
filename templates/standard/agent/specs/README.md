@@ -21,3 +21,7 @@ Este diretório guarda os contratos normativos do projeto alvo que o agente deve
 
 - `project.spec.md`
 - `project.stat.md`
+
+## Relacionados
+
+- [../policy/README.md](../policy/README.md)

@@ -1,0 +1,10 @@
+# AWC source vault ignore
+
+# Keep the source repo clean when opened as a vault
+.obsidian/**
+
+# Keep local experimental editor/config noise out of Git
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db

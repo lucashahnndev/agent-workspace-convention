@@ -45,4 +45,4 @@ Este é o estado inicial pareado com `project.spec.md`.
 
 ## Relacionados
 
-- `project.spec.md`
+- [project.spec](project.spec.md)
