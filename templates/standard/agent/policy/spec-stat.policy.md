@@ -15,7 +15,7 @@
 
 ## Related
 
-- [../specs/README.md](../specs/README.md)
+- [../specs/overview.md](../specs/overview.md)
 - [../specs/project.spec.md](../specs/project.spec.md)
 - [../specs/project.stat.md](../specs/project.stat.md)
 - [linking.policy.md](linking.policy.md)

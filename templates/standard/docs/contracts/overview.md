@@ -9,5 +9,5 @@ Human contracts that explain what the system does without replacing the spec.
 
 ## Related
 
-- [../README.md](../README.md)
-- [../../agent/specs/README.md](../../agent/specs/README.md)
+- [../overview.md](../overview.md)
+- [../../agent/specs/overview.md](../../agent/specs/overview.md)

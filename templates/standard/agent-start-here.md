@@ -19,7 +19,7 @@ Then follow the order below.
 - `.spec` is durable contract.
 - `.stat` is live state.
 - `agent/` is operational workspace.
-- detailed rules live in [agent/policy/README.md](agent/policy/README.md).
+- detailed rules live in [agent/policy/overview.md](agent/policy/overview.md).
 
 ## Abstraction rule
 
@@ -59,5 +59,5 @@ If you are unsure about the next step, follow [agent/policy/adequation.policy.md
 ## Related
 
 - [project.overview.md](project.overview.md)
-- [agent/specs/README.md](agent/specs/README.md)
-- [agent/policy/README.md](agent/policy/README.md)
+- [agent/specs/overview.md](agent/specs/overview.md)
+- [agent/policy/overview.md](agent/policy/overview.md)

@@ -9,5 +9,5 @@ Replaced history, old tracks, and material outside the active base.
 
 ## Related
 
-- [../README.md](../README.md)
-- [../../agent/specs/README.md](../../agent/specs/README.md)
+- [../overview.md](../overview.md)
+- [../../agent/specs/overview.md](../../agent/specs/overview.md)

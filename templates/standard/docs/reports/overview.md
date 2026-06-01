@@ -9,6 +9,6 @@ Reports, audits, and evidence that support decisions and adjustments.
 
 ## Related
 
-- [../README.md](../README.md)
-- [../../agent/specs/README.md](../../agent/specs/README.md)
-- [../../agent/policy/README.md](../../agent/policy/README.md)
+- [../overview.md](../overview.md)
+- [../../agent/specs/overview.md](../../agent/specs/overview.md)
+- [../../agent/policy/overview.md](../../agent/policy/overview.md)

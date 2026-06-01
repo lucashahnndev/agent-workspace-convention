@@ -9,5 +9,5 @@ Migration plans, work phases, and execution checklists.
 
 ## Related
 
-- [../README.md](../README.md)
-- [../../agent/specs/README.md](../../agent/specs/README.md)
+- [../overview.md](../overview.md)
+- [../../agent/specs/overview.md](../../agent/specs/overview.md)

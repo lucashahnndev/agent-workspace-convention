@@ -26,16 +26,16 @@ The `standard` template creates:
 
 - `project.overview.md`
 - `agent-start-here.md`
-- `agent/README.md`
-- `docs/README.md`
-- `docs/contracts/README.md`
-- `docs/policies/README.md`
-- `docs/reports/README.md`
-- `docs/plans/README.md`
-- `docs/guides/README.md`
-- `docs/decisions/README.md`
-- `docs/concepts/README.md`
-- `docs/legacy/README.md`
+- `agent/overview.md`
+- `docs/overview.md`
+- `docs/contracts/overview.md`
+- `docs/policies/overview.md`
+- `docs/reports/overview.md`
+- `docs/plans/overview.md`
+- `docs/guides/overview.md`
+- `docs/decisions/overview.md`
+- `docs/concepts/overview.md`
+- `docs/legacy/overview.md`
 - `.gitignore`
 - `agent/policy/`
 - `agent/specs/`

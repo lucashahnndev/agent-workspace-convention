@@ -9,5 +9,5 @@ Practical guides and operational playbooks.
 
 ## Related
 
-- [../README.md](../README.md)
-- [../../agent/policy/README.md](../../agent/policy/README.md)
+- [../overview.md](../overview.md)
+- [../../agent/policy/overview.md](../../agent/policy/overview.md)

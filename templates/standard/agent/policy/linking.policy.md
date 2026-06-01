@@ -10,7 +10,7 @@
 
 ## Related
 
-- [../specs/README.md](../specs/README.md)
+- [../specs/overview.md](../specs/overview.md)
 - [../specs/project.spec.md](../specs/project.spec.md)
 - [../specs/project.stat.md](../specs/project.stat.md)
 - [spec-stat.policy.md](spec-stat.policy.md)

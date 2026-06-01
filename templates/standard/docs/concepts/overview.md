@@ -10,10 +10,10 @@ Project architecture concepts and ideas.
 
 - [../../agent/specs/project.spec.md](../../agent/specs/project.spec.md)
 - [../../agent/specs/project.stat.md](../../agent/specs/project.stat.md)
-- [../../agent/specs/README.md](../../agent/specs/README.md)
+- [../../agent/specs/overview.md](../../agent/specs/overview.md)
 
 ## Related
 
-- [../README.md](../README.md)
+- [../overview.md](../overview.md)
 - [../../agent-start-here.md](../../agent-start-here.md)
-- [../../agent/README.md](../../agent/README.md)
+- [../../agent/overview.md](../../agent/overview.md)

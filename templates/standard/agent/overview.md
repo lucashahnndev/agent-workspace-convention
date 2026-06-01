@@ -6,9 +6,9 @@ This directory concentrates the agent's working material without polluting the r
 
 - [../project.overview.md](../project.overview.md)
 - [../agent-start-here.md](../agent-start-here.md)
-- [policy/README.md](./policy/README.md)
-- [specs/README.md](./specs/README.md)
-- [../docs/README.md](../docs/README.md)
+- [policy/overview.md](./policy/overview.md)
+- [specs/overview.md](./specs/overview.md)
+- [../docs/overview.md](../docs/overview.md)
 - [specs/project.spec.md](./specs/project.spec.md)
 - [specs/project.stat.md](./specs/project.stat.md)
 
@@ -54,4 +54,4 @@ This directory concentrates the agent's working material without polluting the r
 ## Related
 
 - [../agent-start-here.md](../agent-start-here.md)
-- [../docs/README.md](../docs/README.md)
+- [../docs/overview.md](../docs/overview.md)

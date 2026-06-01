@@ -24,4 +24,4 @@ This directory stores the target project's normative contracts that the agent mu
 
 ## Related
 
-- [../policy/README.md](../policy/README.md)
+- [../policy/overview.md](../policy/overview.md)

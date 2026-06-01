@@ -21,4 +21,4 @@ This directory stores the full rules for the agent.
 
 ## Related
 
-- [../specs/README.md](../specs/README.md)
+- [../specs/overview.md](../specs/overview.md)
